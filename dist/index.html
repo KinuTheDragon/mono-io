@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>mono.io</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+        </style>
+    </head>
+    <body>
+        <div id="canvas-container">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+        <a href="https://discord.gg/CJpzJ4jHsU">Discord</a><br/>
+        Controls: Arrow keys to move, other keys to type. Enter to clear text.<br/>
+        Commands:
+        <ul>
+            <li>/color [hex color]: Change your color (e.g. /color 8800cc).
+                Special colors allowed: rainbow</li>
+            <li>/shape [shape]: Change your shape. Shapes allowed:
+                square, circle, triangle, hexagon,
+                bowtie, sus, cross, sine, checker, check, plus,
+                mover, generator, push, slide,
+                pentagon, star, heart, diamond, arrow, crescent,
+                bolt, shield, gear, octagon, tree, creeper, bob
+                <br/>Usernames and coordinates show an arrow that points
+                towards that position.
+            <li>/admin: Enables admin mode. Requires a password.
+                Players with admin mode have a rainbow outline.
+                Admins can click on other players to kick them.</li>
+            <li>/bc [message]: Broadcast a message (admin only).</li>
+            <li>/goto [x] [y]: Jump to a given position.</li>
+            <li>/username [username]: Set your username.</li>
+            <li>/invis: Toggle invisibility (admin only).</li>
+            <li>/size [size]: Sets your size. Limited to 0.5 to 2 if not admin.</li>
+            <li>/tp [username]: Teleports to another user.</li>
+            <li>/speed [speed]: Sets your speed.
+                Limited to -3 to 3 if not admin.</li>
+            <li>/players: Toggle showing player list.</li>
+            <li>/sudo [username] [command]: Run a command as another user
+                (admin only). Example: /sudo MyName size 1</li>
+        </ul>
+        <script src="main.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </body>
+</html>
